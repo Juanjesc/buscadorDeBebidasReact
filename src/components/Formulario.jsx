@@ -19,7 +19,6 @@ const Formulario = () => {
     }
     setAlert('')
     consultarBebida(busqueda)
-    console.log(busqueda);
   };
   return (
     <Form onSubmit={handleSubmit}>

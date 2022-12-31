@@ -11,10 +11,9 @@ const CategoriasProvider = ({children}) => {
             try {
                 const url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
                 const { data } = await axios(url)
-                console.log(data.drinks)
                 setCategorias(data.drinks)
             } catch (error) {
-                console.log('error error')
+                console.log(error)
             }
         }
         obtenerCategorias()
